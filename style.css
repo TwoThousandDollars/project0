@@ -1,0 +1,18 @@
+/* A075FF */
+h1 {
+  color: #4D58FC;
+  font-family: "Scada", sans-serif; }
+
+.topnav {
+  overflow: hidden;
+  background-color: #EFE9F4; }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #4D58FC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+
+/*# sourceMappingURL=style.css.map */

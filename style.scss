@@ -1,0 +1,30 @@
+$primary-color: #4D58FC;
+$primary-font: 'Scada', sans-serif;
+
+$secondary-color: #59C3C3;
+/* A075FF */
+
+$accent: #F7C59F;
+
+$b-white: #EFE9F4;
+$b-black: #2A324B;
+
+h1
+{
+    color: $primary-color;
+    font-family: $primary-font;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: $b-white;
+  a {
+  float: left;
+  display: block;
+  color: $primary-color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+}
