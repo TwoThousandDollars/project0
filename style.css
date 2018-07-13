@@ -1,18 +1,23 @@
 /* A075FF */
 h1 {
   color: #4D58FC;
-  font-family: "Scada", sans-serif; }
+  font-family: "Scada", sans-serif;
+  text-align: center; }
 
 .topnav {
   overflow: hidden;
-  background-color: #EFE9F4; }
+  background-color: #4D58FC;
+  text-align: center; }
   .topnav a {
-    float: left;
-    display: block;
-    color: #4D58FC;
+    margin: auto;
+    display: inline-block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px; }
+
+.b-wrap {
+  padding: 20px 0 20px 0; }
 
 /*# sourceMappingURL=style.css.map */

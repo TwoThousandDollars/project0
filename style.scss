@@ -9,22 +9,35 @@ $accent: #F7C59F;
 $b-white: #EFE9F4;
 $b-black: #2A324B;
 
-h1
-{
+%header-1 {
     color: $primary-color;
     font-family: $primary-font;
+    text-align: center;
+}
+
+%top-nav {
+    overflow: hidden;
+    background-color: $primary-color;
+    text-align: center;
+    a {
+    margin: auto;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+}
+
+h1 {
+    @extend %header-1;
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: $b-white;
-  a {
-  float: left;
-  display: block;
-  color: $primary-color;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  }
+    @extend %top-nav;
+}
+
+.b-wrap {
+    padding: 20px 0 20px 0;
 }
