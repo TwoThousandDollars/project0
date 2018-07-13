@@ -9,13 +9,14 @@ $accent: #F7C59F;
 $b-white: #EFE9F4;
 $b-black: #2A324B;
 
-%header-1 {
+@mixin header-1-mixin() {
     color: $primary-color;
     font-family: $primary-font;
     text-align: center;
+    margin: 0 10px 0 10px;
 }
 
-%top-nav {
+@mixin topnav-mixin() {
     overflow: hidden;
     background-color: $primary-color;
     text-align: center;
@@ -31,11 +32,30 @@ $b-black: #2A324B;
 }
 
 h1 {
-    @extend %header-1;
+    @include header-1-mixin();
 }
 
 .topnav {
-    @extend %top-nav;
+    @include topnav-mixin();
+}
+
+.lg-pic {
+    margin: auto;
+    width: 100vw;
+}
+
+img {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100vw;
+    height: auto;
+}
+
+@media only screen and (max-width: 580) {
+    .topnav {
+        @include topnav-mixin();
+        background-color: $secondary-color !important;
+    }
 }
 
 .b-wrap {
