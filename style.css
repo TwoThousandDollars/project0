@@ -5,10 +5,26 @@ h1 {
   text-align: center;
   margin: 0 10px 0 10px; }
 
+h2 p {
+  color: #2A324B; }
+
+img {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%; }
+
+table {
+  width: 100%; }
+
+th {
+  background-color: #EFE9F4;
+  color: #4D58FC; }
+
 .topnav {
   overflow: hidden;
   background-color: #4D58FC;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   .topnav a {
     margin: auto;
     display: inline-block;
@@ -16,23 +32,45 @@ h1 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px; }
+    font-size: 17px;
+    border-bottom: 4px solid transparent; }
+    .topnav a:hover {
+      color: #F7C59F;
+      border-bottom: 4px solid #F7C59F; }
+
+.b-wrap {
+  margin: 20px auto 20px auto;
+  padding: 20px 0 20px 0;
+  overflow: auto; }
+
+.bj-wrap {
+  padding: 0 35px 0 35px; }
 
 .lg-pic {
   margin: auto;
   width: 100vw; }
 
-img {
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100vw;
-  height: auto; }
+.sm-pic {
+  max-height: 500px;
+  height: 50%; }
+
+.jumbotron {
+  background-color: #EFE9F4; }
+
+#projects-header {
+  text-align: center;
+  font-size: 5vw;
+  color: #2A324B; }
+
+.project-list {
+  margin: auto; }
 
 @media only screen and (max-width: 580) {
   .topnav {
     overflow: hidden;
     background-color: #4D58FC;
     text-align: center;
+    overflow: hidden;
     background-color: #59C3C3 !important; }
     .topnav a {
       margin: auto;
@@ -41,8 +79,10 @@ img {
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px; } }
-.b-wrap {
-  padding: 20px 0 20px 0; }
+      font-size: 17px;
+      border-bottom: 4px solid transparent; }
+      .topnav a:hover {
+        color: #F7C59F;
+        border-bottom: 4px solid #F7C59F; } }
 
 /*# sourceMappingURL=style.css.map */

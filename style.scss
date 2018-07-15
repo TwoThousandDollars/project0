@@ -20,14 +20,20 @@ $b-black: #2A324B;
     overflow: hidden;
     background-color: $primary-color;
     text-align: center;
+    overflow: hidden;
     a {
-    margin: auto;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+        margin: auto;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-bottom: 4px solid transparent;
+        &:hover {
+            color: $accent;
+            border-bottom: 4px solid $accent;
+        }
     }
 }
 
@@ -35,8 +41,37 @@ h1 {
     @include header-1-mixin();
 }
 
+h2 p {
+    color: $b-black;
+}
+
+img {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: $b-white;
+    color: $primary-color;
+}
+
 .topnav {
     @include topnav-mixin();
+}
+
+.b-wrap {
+    margin: 20px auto 20px auto;
+    padding: 20px 0 20px 0;
+    overflow: auto;
+}
+
+.bj-wrap {
+    padding: 0 35px 0 35px;
 }
 
 .lg-pic {
@@ -44,11 +79,23 @@ h1 {
     width: 100vw;
 }
 
-img {
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100vw;
-    height: auto;
+.sm-pic {
+    max-height: 500px;
+    height: 50%;
+}
+
+.jumbotron {
+    background-color: $b-white;
+}
+
+#projects-header {
+    text-align: center;
+    font-size: 5vw;
+    color: $b-black
+}
+
+.project-list {
+    margin: auto;
 }
 
 @media only screen and (max-width: 580) {
@@ -56,8 +103,4 @@ img {
         @include topnav-mixin();
         background-color: $secondary-color !important;
     }
-}
-
-.b-wrap {
-    padding: 20px 0 20px 0;
 }
